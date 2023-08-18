@@ -1,0 +1,626 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(fonts/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: 'Risque';
+    src: url(fonts/Risque-Regular.ttf);
+}
+@font-face {
+    font-family: 'Syne';
+    src: url(fonts/Syne-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(fonts/Graphik-Regular-Trial.otf);
+}
+
+body {
+    overflow-x: hidden;
+}
+.headernote {
+    background-color: black;
+    height: 53px;
+
+}
+.hspan{
+    font-family: 'Rubik';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: white;
+}
+.note {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    .hspan, .note{
+        font-size: 8px !important;
+    }
+    .headernote {
+        height: 37px !important;
+    }
+    .logo {
+        padding-left: 20px !important;
+    }
+    .circles {
+        width: 232.93px !important;
+    }
+    .column-1{
+        display: none !important;
+    }
+    .column-2 {
+        display: none !important;
+    }
+    .row-apear {
+        display: inherit !important;
+        display: flex !important;
+    }
+    
+}
+
+
+@media only screen and ( max-width: 1200px) {
+    .navigacia {
+        margin-left: 100px !important;
+        padding-right: 20px !important;
+    }
+    .bitch {
+        border-radius: 5px !important;
+        width: calc(100% - 22px) !important;
+        height: auto !important;
+    }
+    .box {
+        width: 100% !important;
+    }
+    .lp-title-text1 {
+        font-size: 7.41px !important;
+    }
+    .lp-title-text2 {
+        font-size: 29.63px !important;
+    }
+    .lp-title-text1 {
+        font-size: 11.11px !important;
+    }
+    .container-id-input {
+        width: 207px !important;
+        height: 34px !important;
+    }
+    .trackbtn {
+        width: auto !important;
+        font-size: 12.22px !important;
+        height: 34px !important;
+    }
+    ::placeholder {
+        font-size: 12px !important;
+    }
+    .main-page-row {
+        height: auto !important;
+    }
+    .main-nav {
+        padding-right: 20px !important;
+    }
+    .wwa-title-primary {
+        font-size: 29.76px !important;
+        text-align: center !important;
+        margin-top: 20px !important;
+    }
+    .wwa-title-secondary {
+        font-size: 33.64px !important;
+        left: 50% !important;
+        transform: translate(-50%, 0);
+        top: 3px !important;
+    }
+    .wwa-text{
+        margin-top: 20px !important;
+        font-size: 12px !important;
+        text-align: center !important;
+    }
+    .button-div {
+        display: flex;
+       justify-content: center;
+    }
+    .wwa-button {
+        margin-top: 20px !important;
+        font-size: 12px !important;
+    }
+    
+    .s-title-primary {
+        font-size: 29.76px !important;
+        text-align: center !important;
+        margin-top: 0px !important;
+    }
+    .s-title-secondary {
+        font-size: 38.64px !important;
+        left: 50% !important;
+        transform: translate(-50%, 0);
+        top: 30px !important;
+    }
+     .services {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    .services-col1, .services-col2, .services-col3, .services-col4, .services-col5, .services-col6, .services-col7 {
+        height: 167px !important;
+    }
+
+    .t-title-primary {
+        font-size: 20.76px !important;
+        text-align: center !important;
+        margin-top: 20px !important;
+    }
+    .t-title-secondary {
+        font-size: 40.64px !important;
+ 
+    }
+    .marry-div {
+        height: auto !important;
+    }
+    .quote {
+        font-size: 12px !important;
+        line-height: 11px !important;
+    }
+    .first-quote-mark, .second-quote-mark {
+        width: 21.72px !important;
+    }
+    .stars {
+        width: 65.03px !important;
+    }
+    .name {
+        font-size: 17px !important;
+        line-height: 25px !important;
+        text-align: center !important;
+    }
+    .profession {
+        font-size: 8px !important;
+        line-height: 17px !important;
+        text-align: center !important;
+    }
+    .carouself-card {
+        margin-bottom: 50px !important;
+    }
+    .services-text {
+        font-size: 15px !important;
+        line-height: 25px !important;
+    }
+    .contact-us {
+        background-image: url(images/contact\ us\ mobile.png) !important;
+    }
+    .connect-title{
+        font-size: 25px !important;
+        line-height: 37px !important;
+    }
+    .connect-subtitle {
+        font-size: 10.91px !important;
+        line-height: 16.36px !important;
+    }
+    .form-col {
+        padding-bottom: 60px !important;
+        padding-top: 45px !important;
+    }
+    .inputs, .inputs2, .selects {
+        height: 27px !important;
+        font-size: 12px !important;
+        line-height: 17px !important;
+    }
+    .inputs, .selects {
+        width: 129.35px !important;
+    }
+    .inputs2 {
+        width: 266.82px !important;
+    }
+    .inputs::placeholder, .inputs2::placeholder, option {
+        font-size: 12px !important;
+        line-height: 17px !important;
+    }
+    .contact-titles {
+        padding-top: 60px !important;
+    }
+    .footer-p {
+        font-size: 9px !important;
+        line-height: 16px !important;
+    }
+}
+::placeholder {
+    font-size: 13.31px;
+}
+.logot1 {   
+    font-family: 'Syne';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #1341EC;
+}
+.logot2 {
+    font-family: 'Risque';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.navigacia a {
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #1C1C1C;
+    text-transform: capitalize;
+}
+.navigacia {
+    margin-left: 268px;
+    padding-right: 60px;
+}
+.logo {
+    padding-left: 62px;
+}
+
+.main-page-row {
+    background-image: url(images/background1.png);
+    background-size: cover;
+    padding-top: 65px;
+    height: 611px;
+    width:100%
+}
+.bitch {
+    border-radius: 16px;
+    border: 0.66px solid #10254D;
+    background-image: url(images/image\ 2.png);
+    width: 1300px;   
+    padding-bottom: 30px;
+    height: auto;
+}
+.lp-title-text1 {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    color: white;   
+}
+.lp-title-text2 {
+    font-family: 'Rubik';
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    margin-top: 16px;
+}
+.box {
+    width: 510px;
+}
+
+.lp-title-text3 {
+    margin-top: 24px;
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.container-id-input {
+    width: calc(465px - 130px);
+    height: 56px;
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    padding-left: 18px;
+}
+.trackbtn {
+    width: 130px;
+    height: 56px;
+    border-radius: 0px 8.318425178527832px 8.318425178527832px 0px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    
+}
+.form1 {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.wwa-title-primary {
+    font-family: 'Rubik';
+    font-size: 64px;
+    font-weight: 600;
+    color: #262626;
+    display: block;
+    margin-top: 40px;
+}
+.wwa-title-secondary {
+    font-family: 'Rubik';
+    font-size: 96px;
+    font-weight: 600;
+    color: #E5E5E5;
+    top: 0;
+    left: 0;
+}
+
+.wwa-text{
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #5D5F61;
+    margin-top: 40px;
+}
+.wwa-button {
+    margin-top: 40px;
+}
+
+
+.s-title-primary {
+    font-family: 'Rubik';
+    font-size: 48px;
+    font-weight: 600;
+    color: #262626;
+    display: block;
+}
+.s-title-secondary {
+    font-family: 'Rubik';
+    font-size: 96px;
+    font-weight: 600;
+    color: #E5E5E5;
+    top: 0;
+}
+
+.services-col1{
+    background-image: url(images/trains.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-col2 {
+    background-image: url(images/near\ by\ furniture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-col3 {
+    background-image: url(images/surface\ express.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-col4 {
+    background-image: url(images/air\ express.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-col5 {
+    background-image: url(images/domestic\ air\ express.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-col6 {
+    background-image: url(images/cold\ chain\ express.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-col7 {
+    background-image: url(images/near\ by\ electronics.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-col1, .services-col2, .services-col3, .services-col4, .services-col5, .services-col6, .services-col7 {
+    border-radius: 5px;
+    padding-left: 33px;
+    padding-bottom: 29px;
+    display: flex;
+    align-items: end;
+}
+.services-text {
+    color: white;
+    font-family: 'Rubik';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    display: block;
+}
+
+.blue-testimonials {
+    font-family: 'Rubik';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+
+}
+.t-title-primary {
+    font-family: 'Rubik';
+    font-size: 48px;
+    font-weight: 600;
+    color: #262626;
+    display: block;
+    margin-top: 50px;
+}
+.t-title-secondary {
+    font-family: 'Rubik';
+    font-size: 96px;
+    font-weight: 600;
+    color: #E5E5E5;
+    top: -10px;
+}
+.arrow-button {
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.06);
+    border-radius: 17px !important;
+    height: 50px;
+}
+.name {
+    font-family: 'Rubik';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    text-align: center;
+    color: rgba(8, 13, 32, 1);
+}
+.marry-div {
+    width: 85%;
+    height: 490.82px;
+    padding: 31px;
+    border-radius: 17.128568649291992px;
+    box-shadow: 0.8px 4px 5px rgba(0, 0, 0, 0.1);
+    
+}
+.profession {
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 300;
+    display: block;
+    line-height: 36px;
+    text-align: center;
+
+}
+.quote {
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 55px;
+}
+.second-quote-mark {
+    margin-left: 90%;
+}
+.black-dot {
+    width: 16.27037239074707px;
+    height: 16.27037239074707px;
+    background-color: black;
+    border-radius: 100%;
+}
+.blue-dot {
+    width: 34.981300354003906px;
+    height: 16.27037239074707px;
+    border-radius: 9.762223243713379px;   
+}
+
+
+.contact-us {
+    background-image: url(images/contact\ us.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inputs {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 284.58px;
+    height: 40px;
+    color: white;
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+
+.inputs::placeholder {
+    color: white;
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+option {
+    color: black;
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.selects {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 284.58px;
+    height: 40px;
+    color: white;
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.inputs2 {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 587px;
+    height: 40px;
+    color: white;
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.inputs2::placeholder {
+    color: white;
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.connect-title {
+    color: white;
+    font-family: 'Rubik';
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 81px;   
+}
+.connect-subtitle {
+    font-family: 'Rubik';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: white;
+}
+.form-col {
+    padding-top: 172px;
+    padding-bottom: 172px;
+}
+.footer-p {
+    font-family: 'Rubik';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #383838;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.links {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.footer-pages {
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.footer-links {
+    font-family: 'Rubik';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    margin-bottom: 20px;
+}
